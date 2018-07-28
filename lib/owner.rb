@@ -40,9 +40,9 @@ class Owner
   def buy_dog(name)
     dog = Dog.new(name)
     self.pets[:dogs] << dog
-  end 
+  end
 
-  def walk_dogs 
+  def walk_dogs
     pets[:dogs].each { |d| d.mood = "happy" }
   end 
 
