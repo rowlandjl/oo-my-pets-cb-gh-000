@@ -59,6 +59,12 @@ class Owner
       pets[k].each { |o| o.mood = "nervous" }
     end
     pets.clear
+  end
+
+  def list_pets
+    temp = []
+    pets.each { |k, v| temp << value.size }
+    "I have a #{temp[0]} fish, #{temp[1]} dog(s), and #{temp[2]} cat(s)."
   end 
 
 end
