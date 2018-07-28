@@ -64,7 +64,7 @@ class Owner
   def list_pets
     temp = []
     pets.each { |k, v| temp << v.size }
-    "I have a #{temp[0]} fish, #{temp[1]} dog(s), and #{temp[2]} cat(s)."
+    "I have #{temp[0]} fish, #{temp[1]} dog(s), and #{temp[2]} cat(s)."
   end
 
 end
