@@ -17,14 +17,19 @@ class Owner
 
   def self.count
     @@all.size
-  end 
+  end
 
-  def self.reset_all 
-    @@all.clear 
-  end 
+  def self.reset_all
+    @@all.clear
+  end
 
-  def say_species 
+  def say_species
     "I am a #{species}."
+  end
+
+  def buy_fish(name)
+    fish = Fish.new(name)
+    self.pets[:fishes] << fish
   end 
 
 end
